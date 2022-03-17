@@ -1,0 +1,15 @@
+[default]
+SECRET_KEY="secret"
+SQLALCHEMY_TRACK_MODIFICATIONS=false
+
+MAIL_SENDER="@jinja {{env.MAIL_SENDER}}"
+MAIL_SERVER="@jinja {{env.MAIL_SERVER}}"
+MAIL_PORT="@jinja {{env.MAIL_PORT}}"
+MAIL_USERNAME="@jinja {{env.MAIL_USERNAME}}"
+MAIL_PASSWORD="@jinja {{env.MAIL_PASSWORD}}"
+MAIL_USE_TLS=true
+MAIL_USE_SSL=false
+
+
+[magnus_flask]
+SQLALCHEMY_DATABASE_URI="mysql://root:root@localhost/teste_db"
